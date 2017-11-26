@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button android:id="@+id/dateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:background="@null"
+                android:layout_weight="3" />
+
+            <Button android:id="@+id/dateButtonto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+                android:background="@null"
+                android:layout_weight="3" />
+
+
+            <Spinner
+                android:id="@+id/spinner_daily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/informview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#acacd9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/refresh_or_not"
+                android:layout_weight="100"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refresh" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

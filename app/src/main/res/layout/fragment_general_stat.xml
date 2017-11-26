@@ -1,0 +1,43 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+
+    <Spinner
+        android:id="@+id/spinner_general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="top|center"
+   />
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="311dp"
+        android:layout_gravity="bottom"
+        app:layout_anchor="@+id/spinner_general"
+        app:layout_anchorGravity="center"
+        tools:layout_editor_absoluteY="180dp">
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_gravity="bottom"
+
+        />
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

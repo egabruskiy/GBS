@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_statistic_directory"
+            android:icon="@drawable/ic_flag"
+            android:title="@string/stat" />
+        <item
+            android:id="@+id/nav_directory_directory"
+            android:icon="@drawable/ic_group"
+            android:title="@string/directory" />
+    </group>
+
+    <item>
+
+        <menu>
+            <item
+                android:id="@+id/nav_logOut_directory"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Log Out" />
+
+        </menu>
+    </item>
+
+</menu>
